@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title> View Attendance </title>
+<script src="jquery-3.5.1.min.js" > </script> 
+<style>
+ body{
+ margin: 0;
+ padding: 3em 0;
+ color: #fff;
+ background: #0080d2;
+ font-family: Georgia, Times New Roman, serif;
+}
+ 
+#container {
+ width: 600px;
+ background: #fff;
+ color: #555;
+ border: 3px solid #ccc;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ border-radius: 10px;
+ border-top: 3px solid #ddd;
+ padding: 1em 2em;
+ margin: 0 auto;
+ -webkit-box-shadow: 3px 7px 5px #000;
+ -moz-box-shadow: 3px 7px 5px #000;
+ -ms-box-shadow: 3px 7px 5px #000;
+ box-shadow: 3px 7px 5px #000;
+}
+ 
+ul {
+ list-style: none;
+ padding: 0;
+}
+ 
+ul > li {
+ padding: 0.12em 1em
+}
+ 
+label {
+ display: block;
+ float: left;
+ width: 130px;
+}
+ 
+input, textarea {
+ font-family: Georgia, Serif;
+}
+</style>
+
+</head>
+<body>
+<div id="container">  
+          
+<h2>Login Form</h2>
+
+<form action="atverify.php" method="post"  id="f1" name="f1">
+  <ul>
+      <li>
+       <label for="facutly code">Enter  Code </label>
+    <input type="text" placeholder="Enter Faculty code" name="fcode" required/>
+    </li>
+
+   <li> <label for="psw"> Enter  Password   </label>
+    <input type="password" placeholder="Enter Faculty Password" name="psw" required/>
+	</li>
+        
+    <li>  <input type="submit" name="submit" value="submit" /></li>
+   </ul> 
+  
+  
+    
+</form>
+  </div>
+    
+	  
+     <script>
+      $("#f1").submit(function(event){
+      	event.preventDefault(); //prevent default action 
+      	var post_url = $(this).attr("action"); //get form action url
+      	var request_method = $(this).attr("method"); //get form GET/POST method
+      	var form_data = $(this).serialize(); //Encode form elements for submission	
+      	$.ajax({
+      		url : post_url,
+      		type: request_method,
+      		data : form_data
+      	}).done(function(response){ //
+      		$("#server-results").html(response);
+      	});
+      });
+    </script>
+             <div id="server-results">
+        <!-- For server results -->
+      </div>
+        
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title></title>
+<link href ="jquery-ui.css"  rel = "stylesheet">
+      <script src ="jquery-3.2.1.min.js"> </script>
+      <script src ="jquery-1.10.2.js"> </script>
+      <script src ="jquery-ui.js"> </script>
+                 
+   <script>
+         $(function() {
+            $( "#datepicker-1" ).datepicker({ dateFormat: 'yy-mm-dd' });
+         });
+     
+         
+         
+         
+      </script>
+       
+<style>
+ body{
+ margin: 0;
+ padding: 3em 0;
+ color: #fff;
+ background: #0080d2;
+ font-family: Georgia, Times New Roman, serif;
+}
+ 
+#container {
+ width: 600px;
+ background: #fff;
+ color: #555;
+ border: 3px solid #ccc;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ border-radius: 10px;
+ border-top: 3px solid #ddd;
+ padding: 1em 2em;
+ margin: 0 auto;
+ -webkit-box-shadow: 3px 7px 5px #000;
+ -moz-box-shadow: 3px 7px 5px #000;
+ -ms-box-shadow: 3px 7px 5px #000;
+ box-shadow: 3px 7px 5px #000;
+}
+ 
+ul {
+ list-style: none;
+ padding: 0;
+}
+ 
+ul > li {
+ padding: 0.12em 1em
+}
+ 
+label {
+ display: block;
+ float: left;
+ width: 130px;
+}
+ 
+input, textarea {
+ font-family: Georgia, Serif;
+}
+</style>
+
+
+  </head>
+  <body>    
+   
+  
+  <div id="container">
+
+  
+ <form action="attmodify.php" method="post" name="form1">
+ <ul>
+ 
+   
+
+    <li> 
+  <label for="Attendence date"> Attendence Date </label><input class ="datepicker" id="datepicker-1" name="datepicker-1"data-date-format="yyyy/mm/dd" / ></li>
+
+
+ <li> 
+  <label for="subject code">Subjetc Code </label>
+  <input type="text" name="scode" /> <li>
+        <li> <label for="semester"> Semester </label>
+        <input type="text" name="sem" /> </li>
+          <li> <label for="Register Number"> Register Number </label><input type="text" name="regno" /> </li>
+         
+      <li> <label for="delete"> Delete <input type="radio" name="update" value="delete" /> </label>   </li>
+      
+      <li>     <label for="Insert"> Insert  <input type="radio" name="update" value="insert" />    </label>   </li>
+         
+     
+      <li>  <input type="submit" name="submit" value="Submit" />    </li>
+         <li>
+       <label for="smsMessage">Message</label>
+       <textarea name="reply" id="repy" cols="45" rows="10"></textarea>
+      </li>
+        
+     </ul>    
+     </form>
+     </div>
+     <script>
+      $("#form1").submit(function(event){
+      	event.preventDefault(); //prevent default action 
+      	var post_url = $(this).attr("action"); //get form action url
+      	var request_method = $(this).attr("method"); //get form GET/POST method
+      	var form_data = $(this).serialize(); //Encode form elements for submission	
+      	$.ajax({
+      		url : post_url,
+      		type: request_method,
+      		data : form_data
+      	}).done(function(response){ //
+      		$("#reply").html(response);
+      	});
+      });
+    </script>
+    
+
+  </body>
+</html>

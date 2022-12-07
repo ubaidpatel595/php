@@ -1,0 +1,95 @@
+﻿1,cs,15SC01T,ENGG MATHS-I
+1,cs,15CS03T,APP SCIENCE
+1,cs,15EC01T,CEEE
+1,cs,15SC06P,SCIENCE LAB
+1,cs,15EC02P,BEEE LAB
+1,cs,15CS11T,BCS LAB
+3,cs,15CS31T,C-PRG
+3,cs,15CS32T,OS
+3,cs,15CS33T,DBMS
+3,cs,15CS34T,CN
+3,cs,15CS35P,C-LAB
+3,cs,15CS36P,DBMS LAB
+3,cs,15CS37P,LINUX LAB
+5,cs,15CS51T,SE
+5,cs,15CS52T,WP
+5,cs,15CS53T,DM
+5,cs,15CS54T,GC
+5,cs,15CS55P,WP LAB
+5,cs,15CS56P,PL/SQL
+5,cs,15CS57P,PP LAB
+5,cs,15CS58P,PW-I
+3,ec,15EC32T,de
+3,ec,15EC33T,dsp
+3,ec,15EC34T,adc
+3,ec,15EC35P,de-LAB
+3,ec,15EC36P,dsp LAB
+3,ec,15EC37P,LINUX LAB
+1,ce,15CE01E , Communication Skills in English
+1,ce,15SC01M ,Engineering Mathematics-I
+1,ce,15CE11T ,Materials of construction 
+1,ce,15CE12D, Engineering Drawing-I 
+1,ce,15CE13P ,Basic Computer Skills Lab
+1,ce,15CE14P,Materials of construction Lab
+2,ce,15SC02M,Engineering Mathematics - II
+2,ce,15SC03S, Applied science  
+2,ce,15CE21T ,Surveying-I 
+2,ce,15CE22D,Engineering Drawing-II
+2,ce,15SC04P , Applied Science Lab  
+2,ce,15CE23P, Surveying Practice-I
+3,ce,15CE31T ,Engineering Mechanics & Strength of Materials
+3,ce,15CE32T ,Water supply Engineering
+3,ce,15CE33T , Surveying-II
+3,ce,15CE34T ,Construction Technology
+3,ce,15CE35D,Building Planning and Drawing
+3,ce,15CE36P ,Surveying Practice-II 
+3,ce,15CE37P ,Basic CAD in Civil Engg
+4,ce,15CE41T,Hydraulics 
+4,ce,15CE42T,Sanitary Engineering 
+4,ce,15CE43T,Concrete Technology 
+4,ce,15CE44T,Professional Ethics & Indian Constitution
+4,ce,15CE45P,Soil &Material Testing lab
+4,ce,15CE46P,Comp. Aided Bldg Planning & Drawing
+4,ce,15CE47P,Hydraulics & Environmental Lab
+5,ce,15CE51T, Design of RCC 
+5,ce,15CE52T,Water Resources Engineering
+5,ce,15CE53T, Estimating & Costing   
+5,ce,15CE54T,Transportation Engineering
+5,ce,15CE55D, Irrigation and Bridge Drawing
+5,ce,15CE56P, Construction Practice 
+5,ce,15CE57P,Professional Practice 
+5,ce,15CE58P,PROJECT WORK-I
+6,ce,15CE61T,Design of Steel & Masonary Structures
+6,ce,15CE62T, Project Management and Valuation
+6,ce,15CE64P,Computer Application Lab
+6,ce,15CE65P,Extensive Survey Camp/Project
+6,ce,15CE66P, Project Work-II 
+6,ce,15CE67P,**In-plant Training
+6,ce,15CE63A ,Town Planning 
+6,ce,15CE63C , Solid Waste Management
+6,ce,15CE63B  , Geo Technical Engineering 
+6,ce,15CE63F ,Environmental Impact Assessment
+6,ce,15CE63G,Theory of Structures
+1,ec,15SC02M,Engineering Mathematics - II
+1,ec,15CPO1E,Communication skills in English
+1,ec,15EC21T,Basics of semiconductor devices
+2,ec,15EC22P,Semiconductor devices Lab
+2,ec,15EC23P,Digital electronics lab-I
+2,ec,15EC24P,Mathematical simulation lab
+4,ec,15EC41T,Professional ethics and indian constitution
+4,ec,15EC42T,Microcontrollers and Its Applications
+4,ec,15EC43T,Digital Communication
+4,ec,15EC44T,Data communication & Networks
+4,ec,15EC45P,Professional practice lab
+4,ec,15EC46P,Microcontrollers and Its Applications Lab
+4,ec,15EC47P,Digital Communication and Networking  Lab
+6,ec,15EC61T,Industrial Automation 
+6,ec,15EC62T,Embedded Systems
+6,ec,15EC63A,Medical Electronics
+6,ec,15EC64P,IA LAB
+6,ec,15EC65P,Verilog Lab
+6,ec,15EC66P,Project Work
+6,ec,15EC67P,Inplant training Lab
+
+
+

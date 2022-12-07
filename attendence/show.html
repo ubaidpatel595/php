@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title> View Attendance </title>
+<script src="jquery-3.5.1.min.js" ></script> 
+<style>
+ body{
+ margin: 0;
+ padding: 3em 0;
+ color: #fff;
+ background: #0080d2;
+ font-family: Georgia, Times New Roman, serif;
+}
+ 
+#container {
+ width: 600px;
+ background: #fff;
+ color: #555;
+ border: 3px solid #ccc;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ border-radius: 10px;
+ border-top: 3px solid #ddd;
+ padding: 1em 2em;
+ margin: 0 auto;
+ -webkit-box-shadow: 3px 7px 5px #000;
+ -moz-box-shadow: 3px 7px 5px #000;
+ -ms-box-shadow: 3px 7px 5px #000;
+ box-shadow: 3px 7px 5px #000;
+}
+ 
+ul {
+ list-style: none;
+ padding: 0;
+}
+ 
+ul > li {
+ padding: 0.12em 1em
+}
+ 
+label {
+ display: block;
+ float: left;
+ width: 130px;
+}
+ 
+input, textarea {
+ font-family: Georgia, Serif;
+}
+</style>
+
+</head>
+<body>
+<form action="showatt.php" method="POST" id="form1">
+ <div id="container">
+
+
+    
+   <div class="container">
+     <ul>  
+     
+   <li>  <label for=" Subject" > Subject Code: </label>
+    <input type="text" name="scode" id="scode" /> </li>
+    
+    
+     
+     <li>   <label for="Semester">Enter Semester:  </label>
+                       <input type="text" name="sem" id="sem" /></li>
+   <li> <input type="submit" value="Showattendence"  /> </li>  </ul>
+   </div>
+    
+
+  
+      
+	  </div>
+	 </form> 
+	  
+     <script>
+      $("#form1").submit(function(event){
+      	event.preventDefault(); //prevent default action 
+      	var post_url = $(this).attr("action"); //get form action url
+      	var request_method = $(this).attr("method"); //get form GET/POST method
+      	var form_data = $(this).serialize(); //Encode form elements for submission	
+      	$.ajax({
+      		url : post_url,
+      		type: request_method,
+      		data : form_data
+      	}).done(function(response){ //
+      		$("#server-results").html(response);
+      	});
+      });
+    </script>
+             <div id="server-results">
+        <!-- For server results -->
+      </div>
+        
+
+
+
+</body>
+</html>
+
